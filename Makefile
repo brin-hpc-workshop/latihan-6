@@ -13,6 +13,8 @@ lingkup_variabel: lingkup_variabel.c
 race_condition: race_condition.c
 	$(CC) $(CFLAGS) -o $@ $<
 
+all: hello_world sections lingkup_variabel race_condition
+
 clean:
 	rm -f hello_world
 	rm -f sections

@@ -10,8 +10,8 @@ int main() {
 
   double start = omp_get_wtime();
 
-// #pragma omp parallel for private(i) shared(sum)
-#pragma omp parallel for private(i) reduction(+ : sum)
+#pragma omp parallel for private(i) shared(sum)
+  // #pragma omp parallel for private(i) reduction(+ : sum)
   for (i = 0; i < N; i++) {
     // #pragma omp critical
     // #pragma omp atomic
