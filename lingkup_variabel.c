@@ -17,5 +17,5 @@ int main() {
     b += a;
   }
 
-  printf("a = %d b = %d seharusnya a = 50 b = 1009\n", a, b);
+  printf("a = %d b = %d seharusnya a = 10 b = 1009\n", a, b);
 }
